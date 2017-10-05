@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import br.sceweb.model.Empresa;
@@ -26,6 +27,7 @@ public class UC01CadastrarEmpresa {
 	public void CT01UC01FBCadastra_com_sucesso() {
 		assertEquals(1,empresaDAO.adiciona(empresa));
 	}
+	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 		empresaDAO.exclui("89424232000180");
