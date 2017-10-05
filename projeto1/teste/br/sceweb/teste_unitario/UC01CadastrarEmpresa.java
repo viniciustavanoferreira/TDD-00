@@ -28,6 +28,7 @@ public class UC01CadastrarEmpresa {
 	}
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
+		empresaDAO.exclui("89424232000180");
 	}
 }
 
